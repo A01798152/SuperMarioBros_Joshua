@@ -10,12 +10,15 @@ public class MueveMario : MonoBehaviour
     [SerializeField] private float fuerzaSalto = 10f;
 
     private Rigidbody2D rb;
+    private Animator animador;
+
     private Vector2 inputMovimiento;
     private bool enSuelo;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animador = GetComponent<Animator>();
     }
 
     void OnEnable()
@@ -37,6 +40,15 @@ public class MueveMario : MonoBehaviour
     void Update()
     {
         inputMovimiento = accionMover.ReadValue<Vector2>();
+
+        // Animación de caminar/idle
+        animador.SetFloat("velocidad", Mathf.Abs(inputMovimiento.x));
+
+        // Voltear personaje
+        if (inputMovimiento.x != 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(inputMovimiento.x), 1, 1);
+        }
     }
 
     void FixedUpdate()
@@ -57,6 +69,7 @@ public class MueveMario : MonoBehaviour
         if (collision.gameObject.CompareTag("Suelo"))
         {
             enSuelo = true;
+            animador.SetBool("enSuelo", true);
         }
     }
 
@@ -65,6 +78,7 @@ public class MueveMario : MonoBehaviour
         if (collision.gameObject.CompareTag("Suelo"))
         {
             enSuelo = false;
+            animador.SetBool("enSuelo", false);
         }
     }
 }
