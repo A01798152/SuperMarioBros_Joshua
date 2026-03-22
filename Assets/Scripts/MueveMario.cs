@@ -6,8 +6,8 @@ public class MueveMario : MonoBehaviour
     [SerializeField] private InputAction accionMover;
     [SerializeField] private InputAction accionSaltar;
 
-    [SerializeField] private float velocidad = 7f;
-    [SerializeField] private float fuerzaSalto = 10f;
+    [SerializeField] private float velocidad = 4f;
+    [SerializeField] private float fuerzaSalto = 5f;
 
     private Rigidbody2D rb;
     private Animator animador;
