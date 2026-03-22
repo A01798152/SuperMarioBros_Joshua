@@ -1,0 +1,73 @@
+:root {
+}
+
+.menu {
+}
+
+.titulo {
+    font-size: 22px;
+    -unity-text-align: upper-left;
+}
+
+.botones {
+}
+
+.boton-juego {
+    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/7.png?fileID=2800000&guid=d3dd507249881854fbaa9d44a29f0d89&type=3#7");
+    width: 300px;
+    height: 200px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-self: center;
+}
+
+.boton-ayuda {
+    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/7.png?fileID=2800000&guid=d3dd507249881854fbaa9d44a29f0d89&type=3#7");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    width: 300px;
+    height: 200px;
+}
+
+.boton-creditos {
+    width: 300px;
+    height: 200px;
+    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/7.png?fileID=2800000&guid=d3dd507249881854fbaa9d44a29f0d89&type=3#7");
+    background-color: rgba(0, 0, 0, 0.04);
+    border-left-color: rgba(0, 0, 0, 0.04);
+    border-right-color: rgba(0, 0, 0, 0.04);
+    border-top-color: rgba(0, 0, 0, 0.04);
+    border-bottom-color: rgba(0, 0, 0, 0.04);
+}
+
+.nombre {
+}
+
+.boton-juego:hover {
+    scale: 1.5 1.5;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform-origin: 1.15% 1.15%;
+}
+
+.boton-ayuda:hover {
+    transform-origin: 1.15% 1.15%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    scale: 1.5 1.5;
+}
+
+.boton-creditos:hover {
+    transform-origin: 1.15% 1.15%;
+    scale: 1.5 1.5;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}

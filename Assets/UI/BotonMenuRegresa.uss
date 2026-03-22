@@ -1,0 +1,18 @@
+:root {
+}
+
+.menu {
+}
+
+.boton {
+    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/5.png?fileID=2800000&guid=2ddc0b0f8f3b5fa47965b9c73f84baf4&type=3#5");
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 150px;
+    justify-content: flex-start;
+}
+
+.boton:hover {
+    scale: 1.15 1.15;
+}
